@@ -1,0 +1,470 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero-section py-5 py-md-0 d-flex align-items-center min-vh-100">
+    <div class="floating-elements"></div>
+    <div class="container hero-content position-relative" style="z-index: 10;">
+        <div class="row align-items-center">
+            <div class="col-lg-7 text-center text-lg-start mb-5 mb-lg-0">
+                <div class="animate__animated animate__fadeInLeft">
+                    <h1 class="hero-title display-3 display-md-2 fw-bold mb-3">
+                        <span class="text-warning">🔥</span> Salchipollos Yarli
+                    </h1>
+                    <h2 class="hero-subtitle display-5 display-md-4 fw-light mb-4">
+                        <strong class="text-warning">EL MEJOR SABOR</strong> de toda la Amazonía 🏆
+                    </h2>
+                    <p class="lead mb-4 fs-5 fs-md-4 px-3 px-lg-0">
+                        <strong>¡LA SAZÓN MÁS DELICIOSA QUE HAYAS PROBADO!</strong><br>
+                        Ven y descubre por qué somos <span class="badge badge-bestseller">EL #1 DE LA ZONA</span>
+                    </p>
+                    {# === INICIO: CAMBIOS AQUÍ para los BOTONES === #}
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3 mb-4">
+                        <a href="{% url 'menu' %}" class="btn btn-fire btn-lg animate__animated animate__pulse animate__infinite w-100 w-sm-auto">
+                            <i class="fas fa-fire me-2"></i>¡PRUEBA NUESTRO MENÚ!
+                        </a>
+                        <a href="{% url 'nosotros' %}" class="btn btn-outline-fire btn-lg w-100 w-sm-auto">
+                            <i class="fas fa-heart me-2"></i>Conoce Nuestra Historia
+                        </a>
+                    </div>
+                    {# === FIN: CAMBIOS AQUÍ para los BOTONES === #}
+
+                    {# === INICIO: CAMBIOS AQUÍ para los BADGES INFERIORES === #}
+                    <div class="row g-2 text-center justify-content-center">
+                        <div class="col-12 col-sm-6 col-md-4"> {# Ocupa todo el ancho en móviles, 2 columnas en sm, 3 en md #}
+                            <div class="badge badge-fire fs-6 p-3 w-100">
+                                <i class="fas fa-trophy d-block mb-1"></i>
+                                <small>Mejor de la Zona</small>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4"> {# Ocupa todo el ancho en móviles, 2 columnas en sm, 3 en md #}
+                            <div class="badge bg-success fs-6 p-3 w-100">
+                                <i class="fas fa-heart d-block mb-1"></i>
+                                <small>100% Natural</small>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4"> {# Ocupa todo el ancho en móviles, 3 columnas en md #}
+                            <div class="badge bg-warning text-dark fs-6 p-3 w-100">
+                                <i class="fas fa-star d-block mb-1"></i>
+                                <small>Sazón Única</small>
+                            </div>
+                        </div>
+                    </div>
+                    {# === FIN: CAMBIOS AQUÍ para los BADGES INFERIORES === #}
+                </div>
+            </div>
+            <div class="col-lg-5 text-center">
+                <div class="animate__animated animate__fadeInRight">
+                    <div class="position-relative">
+                        {# Emojis de pollo responsive: grande para desktop, más pequeño para móvil #}
+                        <div class="pulse-effect d-none d-md-block" style="font-size: 15rem; filter: drop-shadow(0 0 30px rgba(255, 107, 53, 0.8));">
+                            🍗
+                        </div>
+                        <div class="pulse-effect d-block d-md-none" style="font-size: 10rem; filter: drop-shadow(0 0 30px rgba(255, 107, 53, 0.8));">
+                            🍗
+                        </div>
+                        <div class="position-absolute top-0 end-0 translate-middle">
+                            <span class="badge badge-bestseller fs-5 p-3 animate__animated animate__bounce animate__infinite">
+                                ¡EL MEJOR! 🔥
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-pattern">
+    <div class="container">
+        <div class="animate-on-scroll text-center mb-5">
+            <h2 class="section-title-mega text-fire display-4 fw-bold">
+                🏆 ¿POR QUÉ SOMOS LOS MEJORES? 🏆
+            </h2>
+            <p class="lead text-center fs-4 fs-md-3 mb-5 px-3 px-lg-0">
+                <strong>¡Descubre el secreto de nuestro éxito!</strong>
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 animate-on-scroll">
+                <div class="card-premium h-100 text-center p-4">
+                    <div class="card-icon icon-fire pulse-effect">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h4 class="text-fire mb-3 fs-3">🔥 SAZÓN INCOMPARABLE</h4>
+                    <p class="fs-5 mb-3">
+                        <strong>La cocinera MÁS RECONOCIDA de toda la región</strong> con 
+                        recetas secretas que han conquistado a miles de comensales.
+                    </p>
+                    <div class="badge badge-fire">
+                        <i class="fas fa-medal me-1"></i>Receta Secreta Familiar
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 animate-on-scroll">
+                <div class="card-premium h-100 text-center p-4">
+                    <div class="card-icon icon-gold pulse-effect">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h4 class="text-warning mb-3 fs-3">👑 CALIDAD PREMIUM</h4>
+                    <p class="fs-5 mb-3">
+                        <strong>Ingredientes FRESCOS y de la más alta calidad.</strong> 
+                        Cada salchipollo es una obra maestra preparada con amor y dedicación.
+                    </p>
+                    <div class="badge bg-warning text-dark">
+                        <i class="fas fa-check-circle me-1"></i>100% Garantizado
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 animate-on-scroll">
+                <div class="card-premium h-100 text-center p-4">
+                    <div class="card-icon icon-green pulse-effect">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="text-success mb-3 fs-3">❤️ AMBIENTE FAMILIAR</h4>
+                    <p class="fs-5 mb-3">
+                        <strong>El lugar más ACOGEDOR de la zona</strong> donde cada cliente 
+                        se siente como en casa. ¡Ven con tus amigos y familia!
+                    </p>
+                    <div class="badge bg-success">
+                        <i class="fas fa-heart me-1"></i>Hospitalidad Amazónica
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 specialties-section">
+    <div class="container">
+        <div class="animate-on-scroll text-center mb-5">
+            <h2 class="section-title-mega text-white display-4 fw-bold">
+                🍽️ NUESTRAS ESPECIALIDADES 🍽️
+            </h2>
+            <p class="lead fs-4 fs-md-3 mb-4 px-3 px-lg-0">
+                <strong>¡SABORES QUE CONQUISTARÁN TU PALADAR!</strong>
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 animate-on-scroll">
+                <div class="specialty-card h-100">
+                    <div class="specialty-icon">🍗</div>
+                    <h3 class="mb-3 fs-3">SALCHIPOLLOS YARLI</h3>
+                    <div class="badge badge-bestseller mb-3 fs-6">
+                        🔥 ESPECIALIDAD DE LA CASA 🔥
+                    </div>
+                    <p class="fs-5 mb-4">
+                        <strong>¡EL MÁS DELICIOSO DE TODA LA AMAZONÍA!</strong><br>
+                        Preparado con nuestra receta secreta que ha convertido 
+                        a miles de personas en clientes fieles.
+                    </p>
+                    <div class="row g-2 text-center">
+                        <div class="col-6">
+                            <small class="badge bg-light text-dark p-2 w-100">
+                                <i class="fas fa-star text-warning"></i> Súper Jugoso
+                            </small>
+                        </div>
+                        <div class="col-6">
+                            <small class="badge bg-light text-dark p-2 w-100">
+                                <i class="fas fa-fire text-danger"></i> Sazón Única
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 animate-on-scroll">
+                <div class="specialty-card h-100">
+                    <div class="specialty-icon">🍲</div>
+                    <h3 class="mb-3 fs-3">AGUADITO AMAZÓNICO</h3>
+                    <div class="badge bg-success mb-3 fs-6">
+                        🌿 RECETA TRADICIONAL 🌿
+                    </div>
+                    <p class="fs-5 mb-4">
+                        <strong>¡RECONFORTANTE Y DELICIOSO!</strong><br>
+                        Con ingredientes frescos de la selva y ese toque 
+                        especial que solo nuestra cocinera sabe dar.
+                    </p>
+                    <div class="row g-2 text-center">
+                        <div class="col-6">
+                            <small class="badge bg-light text-dark p-2 w-100">
+                                <i class="fas fa-leaf text-success"></i> Natural
+                            </small>
+                        </div>
+                        <div class="col-6">
+                            <small class="badge bg-light text-dark p-2 w-100">
+                                <i class="fas fa-heart text-danger"></i> Nutritivo
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 animate-on-scroll">
+                <div class="specialty-card h-100">
+                    <div class="specialty-icon">🍚</div>
+                    <h3 class="mb-3 fs-3">ARROZ CON POLLO</h3>
+                    <div class="badge bg-warning text-dark mb-3 fs-6">
+                        👑 ESTILO AMAZÓNICO 👑
+                    </div>
+                    <p class="fs-5 mb-4">
+                        <strong>¡TRADICIÓN PURA EN CADA BOCADO!</strong><br>
+                        Preparado con verduras frescas y el sello 
+                        inconfundible de la cocina amazónica.
+                    </p>
+                    <div class="row g-2 text-center">
+                        <div class="col-6">
+                            <small class="badge bg-light text-dark p-2 w-100">
+                                <i class="fas fa-seedling text-success"></i> Fresco
+                            </small>
+                        </div>
+                        <div class="col-6">
+                            <small class="badge bg-light text-dark p-2 w-100">
+                                <i class="fas fa-thumbs-up text-primary"></i> Tradicional
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light bg-pattern">
+    <div class="container">
+        <div class="animate-on-scroll text-center mb-5">
+            <h2 class="section-title-mega text-fire display-4 fw-bold">
+                🥤 BEBIDAS QUE REFRESCAN EL ALMA 🥤
+            </h2>
+            <p class="lead fs-4 fs-md-3 mb-4 px-3 px-lg-0">
+                <strong>¡Perfectas para el calor amazónico!</strong>
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-3 animate-on-scroll">
+                <div class="card-premium text-center h-100">
+                    <div class="card-body p-4">
+                        <div class="specialty-icon text-success">🍎</div>
+                        <h5 class="text-success fs-4">COCONA FRESCA</h5>
+                        <p class="mb-3">Bebida natural de fruta amazónica, ¡súper refrescante!</p>
+                        <div class="badge bg-success">100% Natural</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 animate-on-scroll">
+                <div class="card-premium text-center h-100">
+                    <div class="card-body p-4">
+                        <div class="specialty-icon text-warning">🌽</div>
+                        <h5 class="text-warning fs-4">CHICHA DE JORA</h5>
+                        <p class="mb-3">Tradicional bebida fermentada, ¡sabor ancestral!</p>
+                        <div class="badge bg-warning text-dark">Tradicional</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 animate-on-scroll">
+                <div class="card-premium text-center h-100">
+                    <div class="card-body p-4">
+                        <div class="specialty-icon text-primary">🍷</div>
+                        <h5 class="text-primary fs-4">CHICHA MORADA</h5>
+                        <p class="mb-3">Dulce y nutritiva, ¡llena de antioxidantes!</p>
+                        <div class="badge bg-primary">Antioxidante</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 animate-on-scroll">
+                <div class="card-premium text-center h-100">
+                    <div class="card-body p-4">
+                        <div class="specialty-icon text-info">🍧</div>
+                        <h5 class="text-info fs-4">HELADITAS</h5>
+                        <p class="mb-3">¡Perfectas para combatir el calor de la selva!</p>
+                        <div class="badge bg-info">Súper Frías</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" style="background: var(--gradient-green);">
+    <div class="container">
+        <div class="animate-on-scroll text-center mb-5">
+            <h2 class="section-title-mega text-white display-4 fw-bold">
+                🌟 LO QUE DICEN DE NOSOTROS 🌟
+            </h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+            {% if testimonios %}
+                {% for testimonio in testimonios %}
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="specialty-card h-100 text-center">
+                        <div class="specialty-icon">{% if forloop.first %}🏆{% elif forloop.last %}🔥{% else %}❤️{% endif %}</div>
+                        <h4 class="mb-3 fs-3">{{ testimonio.nombre|upper }}</h4>
+                        <p class="fs-5">
+                            <strong>"{{ testimonio.comentario }}"</strong>
+                        </p>
+                        <div class="text-warning">
+                            {% for i in "12345"|slice:":testimonio.puntuacion" %}
+                            <i class="fas fa-star"></i>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+            {# Contenido de ejemplo si no hay testimonios #}
+            <div class="col-md-6 col-lg-4 animate-on-scroll">
+                <div class="specialty-card h-100 text-center">
+                    <div class="specialty-icon">🏆</div>
+                    <h4 class="mb-3 fs-3">RECONOCIDOS EN LA ZONA</h4>
+                    <p class="fs-5">
+                        <strong>"El MEJOR salchipollo que he probado en mi vida. 
+                        La sazón es INCREÍBLE!"</strong>
+                    </p>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 animate-on-scroll">
+                <div class="specialty-card h-100 text-center">
+                    <div class="specialty-icon">❤️</div>
+                    <h4 class="mb-3 fs-3">RECOMENDADO POR TODOS</h4>
+                    <p class="fs-5">
+                        <strong>"Cada vez que vengo con mis amigos, 
+                        quedamos FASCINADOS. ¡Es nuestro lugar favorito!"</strong>
+                    </p>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 animate-on-scroll">
+                <div class="specialty-card h-100 text-center">
+                    <div class="specialty-icon">🔥</div>
+                    <h4 class="mb-3 fs-3">SAZÓN INIGUALABLE</h4>
+                    <p class="fs-5">
+                        <strong>"La cocinera tiene unas manos MÁGICAS. 
+                        No hay comparación en toda la región!"</strong>
+                    </p>
+                    <div class="text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<section class="py-5 location-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start animate-on-scroll mb-5 mb-lg-0">
+                <h2 class="section-title-mega text-white display-4 fw-bold mb-4">
+                    📍 ¡FÁCIL DE ENCONTRAR!
+                </h2>
+                <div class="info-card-modern p-4">
+                    <h3 class="text-fire mb-4 fs-3">
+                        <i class="fas fa-map-marker-alt me-2"></i>Centro Poblado Tupad Amaru I
+                    </h3>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Distrito de Imaza</strong>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Provincia de Bagua</strong>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <strong>Departamento Amazonas</strong>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center justify-content-center justify-content-sm-start">
+                                <i class="fas fa-running text-primary me-2"></i>
+                                <strong>Al lado de la loza</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="badge badge-bestseller fs-5 p-3">
+                            🎯 ¡TODO EL MUNDO NOS CONOCE! 🎯
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center animate-on-scroll">
+                <div class="d-none d-md-block" style="font-size: 10rem; filter: drop-shadow(0 0 30px rgba(255, 210, 63, 0.8));">
+                    🏪
+                </div>
+                <div class="d-block d-md-none" style="font-size: 7rem; filter: drop-shadow(0 0 30px rgba(255, 210, 63, 0.8));">
+                    🏪
+                </div>
+                <h4 class="text-white mb-3 fs-3">¡El lugar más popular de la zona!</h4>
+                <p class="text-white lead fs-5">
+                    Donde la tradición amazónica cobra vida en cada plato
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" style="background: var(--gradient-fire);">
+    <div class="container text-center text-white">
+        <div class="animate-on-scroll">
+            <h2 class="display-3 fw-bold mb-4 animate__animated animate__pulse animate__infinite">
+                🔥 ¿QUÉ ESPERAS? 🔥
+            </h2>
+            <p class="display-6 mb-4 fs-2">
+                <strong>¡VEN Y PRUEBA EL MEJOR SALCHIPOLLO DE LA AMAZONÍA!</strong>
+            </p>
+            <p class="lead fs-5 mb-5 px-3 px-lg-0">
+                Tu paladar te agradecerá para siempre esta experiencia única ❤️
+            </p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="{% url 'menu' %}" class="btn btn-outline-light btn-lg fs-4 px-5 py-3 animate__animated animate__bounce animate__infinite w-100 w-sm-auto">
+                    <i class="fas fa-utensils me-2"></i>¡QUIERO VER EL MENÚ YA!
+                </a>
+                <a href="{% url 'nosotros' %}" class="btn btn-light btn-lg fs-4 px-5 py-3 text-dark w-100 w-sm-auto">
+                    <i class="fas fa-heart me-2"></i>Conoce Nuestra Historia
+                </a>
+            </div>
+            <div class="mt-5">
+                <div class="row g-3 justify-content-center">
+                    <div class="col-12 col-sm-auto">
+                        <div class="badge bg-light text-dark fs-5 p-3 w-100">
+                            🏆 #1 EN LA ZONA
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <div class="badge bg-light text-dark fs-5 p-3 w-100">
+                            ❤️ AMBIENTE FAMILIAR
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <div class="badge bg-light text-dark fs-5 p-3 w-100">
+                            🔥 SAZÓN ÚNICA
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

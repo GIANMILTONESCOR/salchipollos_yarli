@@ -1,0 +1,80 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | Salchipollos Yarli{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" style="color: #FF6B35; font-weight: bold;">
+    🔥 Salchipollos Yarli
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* Solo mejoras BÁSICAS para móvil */
+    @media (max-width: 768px) {
+        /* Hacer texto más grande en móvil */
+        body { font-size: 16px !important; }
+        
+        /* Botones más grandes */
+        .button, input[type=submit], input[type=button] {
+            padding: 12px 20px !important;
+            font-size: 16px !important;
+        }
+        
+        /* Campos más grandes */
+        input, textarea, select {
+            padding: 12px !important;
+            font-size: 16px !important;
+        }
+        
+        /* Checkboxes más grandes */
+        input[type="checkbox"] {
+            width: 18px !important;
+            height: 18px !important;
+        }
+        
+        /* Tabla más legible */
+        .results th, .results td {
+            padding: 12px 8px !important;
+            font-size: 14px !important;
+        }
+        
+        /* Precio más visible */
+        .field-precio_simple {
+            font-weight: bold !important;
+            color: #2E7D32 !important;
+            font-size: 16px !important;
+        }
+    }
+    
+    /* Mejorar botones principales */
+    .button.default, input[type=submit].default {
+        background: #FF6B35 !important;
+        border-color: #FF6B35 !important;
+        font-weight: bold !important;
+    }
+    
+    .button.default:hover {
+        background: #e55a2b !important;
+    }
+    
+    /* Header más bonito */
+    #site-name {
+        font-size: 24px !important;
+        margin: 10px 0 !important;
+    }
+    
+    /* Breadcrumbs más claros */
+    .breadcrumbs {
+        background: #2E7D32 !important;
+        color: white !important;
+        padding: 10px 15px !important;
+    }
+    
+    .breadcrumbs a {
+        color: #A5D6A7 !important;
+    }
+</style>
+{% endblock %}

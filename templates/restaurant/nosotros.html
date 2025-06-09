@@ -1,656 +1,270 @@
 <!-- templates/restaurant/nosotros.html -->
 {% extends 'base.html' %}
 
-{% block title %}❤️ Nuestra Historia - Salchipollos Yarli{% endblock %}
+{% block title %}❤️ Nosotros - Salchipollos Yarli{% endblock %}
 
 {% block content %}
-<!-- Header Section Ultra Emotivo -->
-<section class="hero-section py-5">
-    <div class="floating-elements"></div>
-    <div class="container hero-content position-relative" style="z-index: 10;">
-        <div class="text-center animate__animated animate__fadeInDown">
-            <h1 class="hero-title">
-                ❤️ NUESTRA HISTORIA ❤️
-            </h1>
-            <p class="hero-subtitle">
-                <strong>LA PASIÓN QUE NOS MUEVE CADA DÍA</strong>
-            </p>
-            <div class="badge badge-bestseller fs-4 p-4 animate__animated animate__heartBeat animate__infinite">
-                🏆 MÁS QUE UN RESTAURANTE, UNA FAMILIA 🏆
-            </div>
+<!-- Hero Móvil -->
+<section class="hero-mobile">
+    <div class="hero-content">
+        <h1 class="hero-title">❤️ NUESTRA HISTORIA</h1>
+        <p class="hero-subtitle">Más que un restaurante, somos familia</p>
+        <div class="hero-badges">
+            <span class="badge">🏆 Reconocidos</span>
+            <span class="badge">👩‍🍳 Sazón única</span>
+            <span class="badge">🏠 Familiar</span>
         </div>
     </div>
 </section>
 
-<!-- Historia Emocional -->
-<section class="py-5 bg-pattern">
-    <div class="container">
-        <div class="row align-items-center mb-5">
-            <div class="col-lg-6 animate-on-scroll">
-                <h2 class="section-title-mega text-fire">
-                    ✨ NUESTROS INICIOS ✨
-                </h2>
-                <p class="lead fs-4 mb-4">
-                    <strong>Todo comenzó con un SUEÑO:</strong> llevar la auténtica sazón amazónica 
-                    a cada mesa, cada corazón, cada familia de nuestra querida comunidad.
-                </p>
-                <div class="card-premium p-4 mb-4">
-                    <p class="fs-5 mb-3">
-                        <strong>🌿 En el corazón del Centro Poblado Tupad Amaru I</strong>, distrito de Imaza, 
-                        provincia de Bagua, departamento de Amazonas, nació esta historia de amor por la cocina.
-                    </p>
-                    <p class="fs-5 mb-3">
-                        <strong>🏠 Al lado de la loza deportiva</strong>, donde se respira comunidad y alegría, 
-                        decidimos crear un espacio especial donde cada plato cuente una historia.
-                    </p>
-                    <p class="fs-5 mb-0">
-                        <strong>❤️ No es solo comida</strong>, es el resultado de años de tradición, 
-                        amor por la cocina y el deseo de hacer feliz a cada persona que nos visita.
-                    </p>
-                </div>
-                <div class="text-center">
-                    <div class="badge badge-fire fs-5 p-3">
-                        🌟 DESDE EL PRIMER DÍA, PENSANDO EN TI 🌟
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center animate-on-scroll">
-                <div class="position-relative">
-                    <div style="font-size: 12rem; filter: drop-shadow(0 0 30px rgba(255, 107, 53, 0.8));">
-                        🏠
-                    </div>
-                    <div class="position-absolute top-0 start-0 translate-middle">
-                        <span class="badge bg-success fs-6 p-3 animate__animated animate__pulse animate__infinite">
-                            🌿 AMAZÓNICO
-                        </span>
-                    </div>
-                    <div class="position-absolute bottom-0 end-0 translate-middle">
-                        <span class="badge bg-warning text-dark fs-6 p-3 animate__animated animate__pulse animate__infinite">
-                            ❤️ FAMILIAR
-                        </span>
-                    </div>
-                </div>
-                <h4 class="text-fire mt-3">En el corazón de la comunidad</h4>
-                <p class="lead">Donde cada día escribimos nuevas historias de sabor</p>
-            </div>
+<!-- Nuestra Historia -->
+<section class="section">
+    <h2 class="section-title">
+        <i class="fas fa-heart"></i>
+        ¿Quiénes somos?
+    </h2>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🌟 Salchipollos Yarli</div>
+            <div class="item-description">Más que un puesto, somos el corazón gastronómico de Tupad Amaru I. Un lugar donde cada plato se prepara con amor y tradición.</div>
+        </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">👩‍🍳 Nuestra Cocinera</div>
+            <div class="item-description">La sazón más reconocida de nuetra zona ven y compruebalo. Años de experiencia han perfeccionado cada receta que ofrecemos.</div>
+        </div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🏠 Ambiente Familiar</div>
+            <div class="item-description">Un espacio cálido y acogedor donde cada cliente se siente como en casa. Perfecto para disfrutar con amigos.</div>
         </div>
     </div>
 </section>
 
-<!-- La Estrella: Nuestra Cocinera -->
-<section class="py-5 specialties-section">
-    <div class="container">
-        <div class="animate-on-scroll text-center mb-5">
-            <h2 class="section-title-mega text-white">
-                👩‍🍳 LA MÁGICA DE LA COCINA 👩‍🍳
-            </h2>
-            <p class="lead text-white fs-3 mb-4">
-                <strong>¡CONOCE AL GENIO DETRÁS DE CADA SABOR!</strong>
-            </p>
+<!-- Ubicación Detallada -->
+<section class="section">
+    <h2 class="section-title">
+        <i class="fas fa-map-marker-alt"></i>
+        ¿Dónde nos encuentras?
+    </h2>
+    
+    <!-- Banner de Ubicación -->
+    <div class="special-banner">
+        <div class="special-title">📍 AL LADO DEL COLISEO</div>
+        <div class="special-subtitle">Loza deportiva - Todo el mundo nos conoce</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🏘️ Centro Poblado</div>
+            <div class="item-description">Tupad Amaru I - El corazón de nuestra comunidad</div>
         </div>
-        
-        <div class="row align-items-center">
-            <div class="col-lg-6 text-center animate-on-scroll">
-                <div style="font-size: 10rem; filter: drop-shadow(0 0 30px rgba(255, 210, 63, 0.8));">
-                    👩‍🍳
-                </div>
-                <div class="specialty-card mt-4">
-                    <h3 class="text-fire mb-3">🌟 LA COCINERA MÁS RECONOCIDA 🌟</h3>
-                    <div class="row g-3">
-                        <div class="col-6">
-                            <div class="badge bg-warning text-dark w-100 p-3">
-                                <i class="fas fa-trophy d-block mb-1"></i>
-                                <small>Años de Experiencia</small>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="badge bg-success w-100 p-3">
-                                <i class="fas fa-heart d-block mb-1"></i>
-                                <small>Cocina con Amor</small>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="badge bg-primary w-100 p-3">
-                                <i class="fas fa-magic d-block mb-1"></i>
-                                <small>Recetas Secretas</small>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="badge bg-info w-100 p-3">
-                                <i class="fas fa-crown d-block mb-1"></i>
-                                <small>Sazón Única</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 animate-on-scroll text-white">
-                <h3 class="mb-4">🔥 ¿QUÉ LA HACE TAN ESPECIAL?</h3>
-                <div class="row g-3">
-                    <div class="col-12">
-                        <div class="specialty-card">
-                            <div class="d-flex align-items-center">
-                                <div style="font-size: 3rem; margin-right: 1rem;">🧬</div>
-                                <div>
-                                    <h5 class="mb-1 text-fire">RECETAS FAMILIARES</h5>
-                                    <p class="mb-0">Secretos culinarios transmitidos por generaciones, 
-                                    perfeccionados con años de dedicación y amor por la cocina amazónica.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="specialty-card">
-                            <div class="d-flex align-items-center">
-                                <div style="font-size: 3rem; margin-right: 1rem;">🎯</div>
-                                <div>
-                                    <h5 class="mb-1 text-fire">PRECISIÓN PERFECTA</h5>
-                                    <p class="mb-0">Cada ingrediente, cada tiempo de cocción, cada sazón 
-                                    calculado al milímetro para lograr el sabor perfecto.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="specialty-card">
-                            <div class="d-flex align-items-center">
-                                <div style="font-size: 3rem; margin-right: 1rem;">💫</div>
-                                <div>
-                                    <h5 class="mb-1 text-fire">TOQUE MÁGICO</h5>
-                                    <p class="mb-0">Ese algo especial que no se puede explicar, 
-                                    pero que todos sienten en cada bocado. ¡Es pura magia culinaria!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="item-price" style="background: var(--success);">📍</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🏛️ Distrito</div>
+            <div class="item-description">Imaza - Tierra de tradiciones amazónicas</div>
         </div>
+        <div class="item-price" style="background: var(--success);">🌿</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🗺️ Provincia</div>
+            <div class="item-description">Bagua - Rica en cultura y biodiversidad</div>
+        </div>
+        <div class="item-price" style="background: var(--success);">🏔️</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🌄 Departamento</div>
+            <div class="item-description">Amazonas - Cuna de la naturaleza peruana</div>
+        </div>
+        <div class="item-price" style="background: var(--success);">🦋</div>
     </div>
 </section>
 
-<!-- Nuestro Ambiente -->
-<section class="py-5 bg-light bg-pattern">
-    <div class="container">
-        <div class="animate-on-scroll text-center mb-5">
-            <h2 class="section-title-mega text-fire">
-                🏠 NUESTRO HOGAR, TU HOGAR 🏠
-            </h2>
-            <p class="lead fs-3 mb-4">
-                <strong>¡Un espacio diseñado para crear recuerdos!</strong>
-            </p>
+<!-- Punto de Referencia -->
+<div class="location-quick">
+    <div class="location-title">🏃‍♂️ Súper fácil de encontrar</div>
+    <div class="location-text">
+        <strong>AL LADO DE LA LOZA DEPORTIVA (COLISEO)</strong><br>
+        Centro Poblado Tupad Amaru I<br>
+        ¡Todo el mundo conoce el lugar!
+    </div>
+</div>
+
+<!-- Lo que nos hace especiales -->
+<section class="section">
+    <h2 class="section-title">
+        <i class="fas fa-star"></i>
+        ¿Por qué nos eligen?
+    </h2>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🔥 Sazón Incomparable</div>
+            <div class="item-description">Recetas familiares transmitidas por generaciones con ese toque especial que nos distingue</div>
         </div>
-        
-        <div class="row align-items-center">
-            <div class="col-lg-6 animate-on-scroll">
-                <h3 class="text-fire mb-4">❤️ AMBIENTE QUE ENAMORA</h3>
-                <div class="card-premium p-4 mb-4">
-                    <p class="fs-5 mb-3">
-                        <strong>🌈 Más que un restaurante, somos un punto de encuentro</strong> 
-                        donde se respira la calidez y amabilidad característica de la gente amazónica.
-                    </p>
-                    <p class="fs-5 mb-3">
-                        <strong>👥 Es el lugar perfecto para disfrutar con amigos</strong>, 
-                        celebrar momentos importantes o simplemente relajarse mientras se saborea 
-                        la auténtica comida de la selva.
-                    </p>
-                    <p class="fs-5 mb-0">
-                        <strong>🌿 El calor humano de nuestro equipo</strong>, combinado con la 
-                        frescura de nuestras bebidas naturales, crea la experiencia perfecta.
-                    </p>
-                </div>
-                <div class="text-center">
-                    <div class="badge badge-bestseller fs-5 p-3">
-                        🤗 DONDE TODOS SON BIENVENIDOS 🤗
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 animate-on-scroll">
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <div class="card-premium border-0 bg-primary text-white text-center p-4 h-100">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">👨‍👩‍👧‍👦</div>
-                            <h6>AMBIENTE FAMILIAR</h6>
-                            <p class="mb-0 small">Perfecto para toda la familia</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card-premium border-0 bg-success text-white text-center p-4 h-100">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">😊</div>
-                            <h6>ATENCIÓN CÁLIDA</h6>
-                            <p class="mb-0 small">Servicio con sonrisa genuina</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card-premium border-0 bg-warning text-dark text-center p-4 h-100">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
-                            <h6>TRATO AMIGABLE</h6>
-                            <p class="mb-0 small">Como si fueras de la familia</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card-premium border-0 bg-info text-white text-center p-4 h-100">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">🌿</div>
-                            <h6>AMBIENTE NATURAL</h6>
-                            <p class="mb-0 small">Frescura amazónica</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="item-price price-special">⭐⭐⭐⭐⭐</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">💰 Precios Justos</div>
+            <div class="item-description">Calidad premium a precios que cuidan tu bolsillo. Comida rica sin romper el presupuesto</div>
         </div>
+        <div class="item-price" style="background: var(--accent);">💝</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">⚡ Servicio Rápido</div>
+            <div class="item-description">Atención ágil y amigable para que no esperes mucho por tu comida deliciosa</div>
+        </div>
+        <div class="item-price" style="background: var(--primary); color: white;">🚀</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🌿 Ingredientes Frescos</div>
+            <div class="item-description">Seleccionamos diariamente los mejores productos para garantizar frescura y sabor</div>
+        </div>
+        <div class="item-price" style="background: var(--success);">✅</div>
     </div>
 </section>
 
-<!-- Ubicación Detallada y Emotiva -->
-<section class="py-5 location-section">
-    <div class="container">
-        <div class="animate-on-scroll text-center mb-5">
-            <h2 class="section-title-mega text-white">
-                📍 NUESTRO RINCÓN EN EL MUNDO 📍
-            </h2>
-            <p class="lead text-white fs-3 mb-4">
-                <strong>¡En el corazón de la comunidad amazónica!</strong>
-            </p>
-        </div>
-        
-        <div class="row g-4 mb-5">
-            <div class="col-lg-3 col-md-6 animate-on-scroll">
-                <div class="info-card-modern text-center h-100">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🏘️</div>
-                    <h5 class="text-fire">Centro Poblado</h5>
-                    <p class="fs-4 fw-bold text-dark mb-2">Tupad Amaru I</p>
-                    <p class="text-muted mb-0">El corazón de nuestra comunidad</p>
-                </div>
+<!-- Testimonios -->
+<section class="section">
+    <h2 class="section-title">
+        <i class="fas fa-comments"></i>
+        Lo que dice la gente
+    </h2>
+    
+    {% if testimonios %}
+        {% for testimonio in testimonios %}
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">{{ testimonio.nombre }}</div>
+                <div class="item-description">"{{ testimonio.comentario }}"</div>
             </div>
-            <div class="col-lg-3 col-md-6 animate-on-scroll">
-                <div class="info-card-modern text-center h-100">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🏛️</div>
-                    <h5 class="text-fire">Distrito</h5>
-                    <p class="fs-4 fw-bold text-dark mb-2">Imaza</p>
-                    <p class="text-muted mb-0">Tierra de tradiciones</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 animate-on-scroll">
-                <div class="info-card-modern text-center h-100">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🗺️</div>
-                    <h5 class="text-fire">Provincia</h5>
-                    <p class="fs-4 fw-bold text-dark mb-2">Bagua</p>
-                    <p class="text-muted mb-0">Rica en cultura amazónica</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 animate-on-scroll">
-                <div class="info-card-modern text-center h-100">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🏔️</div>
-                    <h5 class="text-fire">Departamento</h5>
-                    <p class="fs-4 fw-bold text-dark mb-2">Amazonas</p>
-                    <p class="text-muted mb-0">Cuna de biodiversidad</p>
-                </div>
+            <div class="item-price" style="background: var(--success); font-size: 0.9rem;">
+                {% for i in "12345"|slice:":testimonio.puntuacion" %}⭐{% endfor %}
             </div>
         </div>
-        
-        <div class="row align-items-center">
-            <div class="col-lg-8 animate-on-scroll">
-                <div class="specialty-card">
-                    <h3 class="text-fire mb-4">
-                        🏃‍♂️ PUNTO DE REFERENCIA PERFECTO
-                    </h3>
-                    <p class="fs-4 mb-4">
-                        <strong>¡AL LADO DE LA LOZA DEPORTIVA!</strong><br>
-                        Un lugar conocido por toda la comunidad donde el deporte y la alegría 
-                        se encuentran con el mejor sabor de la región.
-                    </p>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
-                                <div>
-                                    <h6 class="mb-1 text-primary">Fácil de Encontrar</h6>
-                                    <small>Todo el mundo conoce la loza</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-users fa-2x text-success me-3"></i>
-                                <div>
-                                    <h6 class="mb-1 text-success">Centro Social</h6>
-                                    <small>Donde se reúne la comunidad</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-running fa-2x text-warning me-3"></i>
-                                <div>
-                                    <h6 class="mb-1 text-warning">Ambiente Activo</h6>
-                                    <small>Energía positiva siempre</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-heart fa-2x text-danger me-3"></i>
-                                <div>
-                                    <h6 class="mb-1 text-danger">Corazón del Pueblo</h6>
-                                    <small>Donde late la comunidad</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center animate-on-scroll">
-                <div style="font-size: 8rem; filter: drop-shadow(0 0 30px rgba(255, 210, 63, 0.8));">
-                    ⚽
-                </div>
-                <h4 class="text-white mt-3">¡Todos nos conocen!</h4>
-                <p class="text-white lead">El punto de encuentro favorito</p>
-            </div>
+        {% endfor %}
+    {% else %}
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">María González</div>
+            <div class="item-description">"El mejor salchipollo de toda la región. La sazón es increíble y el lugar súper acogedor."</div>
         </div>
+        <div class="item-price" style="background: var(--success); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
     </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">Carlos Ruiz</div>
+            <div class="item-description">"Vengo cada semana con mis amigos. La comida es deliciosa y los precios súper buenos."</div>
+        </div>
+        <div class="item-price" style="background: var(--success); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">Ana Torres</div>
+            <div class="item-description">"La cocinera tiene unas manos mágicas. No hay comparación en toda la zona del coliseo."</div>
+        </div>
+        <div class="item-price" style="background: var(--success); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">Luis Mendoza</div>
+            <div class="item-description">"Después del partido en la loza siempre venimos aquí. El ambiente es familiar y la comida riquísima."</div>
+        </div>
+        <div class="item-price" style="background: var(--success); font-size: 0.9rem;">⭐⭐⭐⭐⭐</div>
+    </div>
+    {% endif %}
 </section>
 
-<!-- Valores y Filosofía -->
-<section class="py-5 bg-light bg-pattern">
-    <div class="container">
-        <div class="animate-on-scroll text-center mb-5">
-            <h2 class="section-title-mega text-fire">
-                💎 NUESTROS VALORES 💎
-            </h2>
-            <p class="lead fs-3 mb-4">
-                <strong>¡Los principios que guían cada día nuestro trabajo!</strong>
-            </p>
+<!-- Horarios y Servicios -->
+<section class="section">
+    <h2 class="section-title">
+        <i class="fas fa-clock"></i>
+        Horarios y Servicios
+    </h2>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🕐 Horarios</div>
+            <div class="item-description">Abierto todos los días con horarios flexibles para tu comodidad</div>
         </div>
-        
-        <div class="row g-4">
-            <div class="col-lg-4 animate-on-scroll">
-                <div class="card-premium h-100 text-center p-4">
-                    <div style="font-size: 5rem; margin-bottom: 1.5rem;">🔥</div>
-                    <h4 class="text-fire mb-3">TRADICIÓN</h4>
-                    <p class="fs-5 mb-3">
-                        <strong>Preservamos y compartimos</strong> las recetas tradicionales de la Amazonía, 
-                        manteniendo viva nuestra cultura culinaria para las futuras generaciones.
-                    </p>
-                    <div class="badge badge-fire">
-                        <i class="fas fa-history me-1"></i>Herencia Cultural
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 animate-on-scroll">
-                <div class="card-premium h-100 text-center p-4">
-                    <div style="font-size: 5rem; margin-bottom: 1.5rem;">👥</div>
-                    <h4 class="text-fire mb-3">COMUNIDAD</h4>
-                    <p class="fs-5 mb-3">
-                        <strong>Somos parte integral</strong> de nuestra comunidad, un lugar de encuentro 
-                        donde todos son bienvenidos y cada cliente se convierte en familia.
-                    </p>
-                    <div class="badge bg-primary">
-                        <i class="fas fa-handshake me-1"></i>Unión Familiar
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 animate-on-scroll">
-                <div class="card-premium h-100 text-center p-4">
-                    <div style="font-size: 5rem; margin-bottom: 1.5rem;">⭐</div>
-                    <h4 class="text-fire mb-3">EXCELENCIA</h4>
-                    <p class="fs-5 mb-3">
-                        <strong>Ingredientes frescos y de calidad</strong>, preparando cada plato con 
-                        dedicación, amor y los más altos estándares de calidad.
-                    </p>
-                    <div class="badge bg-success">
-                        <i class="fas fa-crown me-1"></i>Calidad Premium
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="item-price" style="background: var(--primary); color: white;">24/7</div>
     </div>
-</section>
-
-<!-- Reconocimiento de la Comunidad -->
-<section class="py-5" style="background: var(--gradient-green);">
-    <div class="container">
-        <div class="animate-on-scroll text-center mb-5">
-            <h2 class="section-title-mega text-white">
-                🏆 RECONOCIDOS POR LA COMUNIDAD 🏆
-            </h2>
-            <p class="lead text-white fs-3 mb-4">
-                <strong>¡El testimonio más valioso es el de nuestra gente!</strong>
-            </p>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">📞 Pedidos</div>
+            <div class="item-description">Haz tu pedido por WhatsApp y recógelo cuando gustes</div>
         </div>
-        
-        <!-- Testimonios dinámicos desde Django -->
-        {% if testimonios %}
-        <div class="row g-4 mb-5">
-            {% for testimonio in testimonios %}
-            <div class="col-lg-4 animate-on-scroll">
-                <div class="specialty-card text-center">
-                    <div class="specialty-icon">
-                        {% if forloop.first %}🏆
-                        {% elif forloop.counter == 2 %}❤️
-                        {% elif forloop.counter == 3 %}🔥
-                        {% elif forloop.counter == 4 %}⭐
-                        {% elif forloop.counter == 5 %}👑
-                        {% else %}🌟{% endif %}
-                    </div>
-                    <h4 class="mb-3">{{ testimonio.nombre|upper }}</h4>
-                    <p class="fs-5">
-                        <strong>"{{ testimonio.comentario }}"</strong>
-                    </p>
-                    <div class="text-warning mb-2">
-                        {% for i in "12345"|slice:":testimonio.puntuacion" %}
-                        <i class="fas fa-star"></i>
-                        {% endfor %}
-                    </div>
-                    <small class="text-muted">{{ testimonio.fecha|date:"d/m/Y" }}</small>
-                </div>
-            </div>
-            {% endfor %}
+        <div class="item-price" style="background: #25D366; color: white;">📱</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">👥 Para Grupos</div>
+            <div class="item-description">Perfecto para venir después del partido o con toda la familia</div>
         </div>
-        {% endif %}
-        
-        <div class="row align-items-center">
-            <div class="col-lg-8 animate-on-scroll">
-                <div class="specialty-card">
-                    <h3 class="text-fire mb-4">
-                        <i class="fas fa-thumbs-up me-2"></i>¿POR QUÉ NOS RECOMIENDAN?
-                    </h3>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-start">
-                                <div class="me-3" style="font-size: 2rem;">🥇</div>
-                                <div>
-                                    <h6 class="text-fire mb-2">CALIDAD INCOMPARABLE</h6>
-                                    <p class="mb-0">Cada plato es una obra maestra que supera las expectativas 
-                                    de los comensales más exigentes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-start">
-                                <div class="me-3" style="font-size: 2rem;">❤️</div>
-                                <div>
-                                    <h6 class="text-fire mb-2">SERVICIO CON CORAZÓN</h6>
-                                    <p class="mb-0">Tratamos a cada cliente como familia, con calidez 
-                                    y atención personalizada.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-start">
-                                <div class="me-3" style="font-size: 2rem;">🎯</div>
-                                <div>
-                                    <h6 class="text-fire mb-2">CONSISTENCIA TOTAL</h6>
-                                    <p class="mb-0">Desde el primer día mantenemos la misma calidad 
-                                    y sabor que nos caracteriza.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-start">
-                                <div class="me-3" style="font-size: 2rem;">🌟</div>
-                                <div>
-                                    <h6 class="text-fire mb-2">EXPERIENCIA ÚNICA</h6>
-                                    <p class="mb-0">No solo servimos comida, creamos momentos 
-                                    y recuerdos inolvidables.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center animate-on-scroll">
-                <div style="font-size: 8rem; filter: drop-shadow(0 0 30px rgba(255, 210, 63, 0.8));">
-                    🏆
-                </div>
-                <h4 class="text-white mt-3">¡Orgullo de la Región!</h4>
-                <p class="text-white lead">Reconocidos por nuestra excelencia</p>
-                <div class="mt-4">
-                    <div class="badge badge-bestseller fs-5 p-3">
-                        ⭐ #1 EN PREFERENCIA ⭐
-                    </div>
-                </div>
-            </div>
+        <div class="item-price" style="background: var(--accent);">🎉</div>
+    </div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <div class="item-name">🌡️ Ambiente Fresco</div>
+            <div class="item-description">Local ventilado y cómodo, ideal para el clima amazónico</div>
         </div>
+        <div class="item-price" style="background: var(--success);">❄️</div>
     </div>
 </section>
 
 <!-- Nuestra Promesa -->
-<section class="py-5 bg-light bg-pattern">
-    <div class="container">
-        <div class="animate-on-scroll text-center">
-            <h2 class="section-title-mega text-fire mb-5">
-                🤝 NUESTRA PROMESA PARA TI 🤝
-            </h2>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="card-premium h-100 p-4">
-                        <div class="text-center mb-4">
-                            <div style="font-size: 4rem;">💯</div>
-                            <h4 class="text-fire">COMPROMISO TOTAL</h4>
-                        </div>
-                        <ul class="list-unstyled fs-5">
-                            <li class="mb-3">
-                                <i class="fas fa-check-circle text-success me-2"></i>
-                                <strong>Ingredientes frescos</strong> seleccionados diariamente
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check-circle text-success me-2"></i>
-                                <strong>Preparación con amor</strong> y dedicación en cada plato
-                            </li>
-                            <li class="mb-3">
-                                <i class="fas fa-check-circle text-success me-2"></i>
-                                <strong>Servicio excepcional</strong> que supere tus expectativas
-                            </li>
-                            <li class="mb-0">
-                                <i class="fas fa-check-circle text-success me-2"></i>
-                                <strong>Ambiente familiar</strong> donde te sientas como en casa
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card-premium h-100 p-4">
-                        <div class="text-center mb-4">
-                            <div style="font-size: 4rem;">🎯</div>
-                            <h4 class="text-fire">NUESTRA MISIÓN</h4>
-                        </div>
-                        {% if info and info.mision %}
-                        <p class="fs-4 text-center mb-4">
-                            <strong>"{{ info.mision }}"</strong>
-                        </p>
-                        {% else %}
-                        <p class="fs-4 text-center mb-4">
-                            <strong>"Ser el lugar donde cada comida se convierte en un momento especial, 
-                            donde cada sabor cuenta una historia y donde cada cliente se siente parte 
-                            de nuestra gran familia amazónica."</strong>
-                        </p>
-                        {% endif %}
-                        <div class="text-center">
-                            <div class="badge badge-bestseller fs-6 p-3">
-                                ❤️ SALCHIPOLLOS YARLI: TU SEGUNDO HOGAR ❤️
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="special-banner">
+    <div class="special-title">🤝 NUESTRA PROMESA</div>
+    <div class="special-subtitle">Comida rica, precios justos, ambiente familiar</div>
+</div>
+
+<!-- Botones de Acción -->
+<section class="section">
+    <button class="action-btn" onclick="location.href='{% url 'menu' %}'">
+        <i class="fas fa-utensils"></i>
+        Ver Nuestro Menú
+    </button>
+    
+    <button class="action-btn" onclick="window.open('https://wa.me/51943823942?text=Hola, quiero información sobre Salchipollos Yarli', '_blank')" style="background: #25D366;">
+        <i class="fab fa-whatsapp"></i>
+        Contactar por WhatsApp
+    </button>
 </section>
 
-<!-- Call to Action Final Emotivo -->
-<section class="py-5" style="background: var(--gradient-fire);">
-    <div class="container text-center text-white">
-        <div class="animate-on-scroll">
-            <h2 class="display-3 fw-bold mb-4 animate__animated animate__heartBeat animate__infinite">
-                🤗 ¡VEN Y SÉ PARTE DE NUESTRA FAMILIA! 🤗
-            </h2>
-            <p class="display-6 mb-4">
-                <strong>¡TU LUGAR ESTÁ ESPERÁNDOTE!</strong>
-            </p>
-            <p class="lead fs-3 mb-5">
-                No importa si vienes solo, en pareja, con amigos o familia: 
-                <strong>¡AQUÍ SIEMPRE SERÁS BIENVENIDO!</strong> ❤️
-            </p>
-            
-            <div class="row g-3 justify-content-center mb-5">
-                <div class="col-auto">
-                    <div class="badge bg-light text-dark fs-4 p-4">
-                        👩‍🍳 COCINERA EXPERTA
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="badge bg-light text-dark fs-4 p-4">
-                        🏠 AMBIENTE FAMILIAR
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="badge bg-light text-dark fs-4 p-4">
-                        🔥 SABOR INCOMPARABLE
-                    </div>
-                </div>
-            </div>
-            
-            <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
-                <a href="{% url 'menu' %}" class="btn btn-outline-light btn-lg fs-3 px-5 py-3 animate__animated animate__bounce animate__infinite">
-                    <i class="fas fa-utensils me-2"></i>¡QUIERO VER EL MENÚ!
-                </a>
-                <a href="{% url 'home' %}" class="btn btn-light btn-lg fs-3 px-5 py-3 text-dark">
-                    <i class="fas fa-home me-2"></i>Volver al Inicio
-                </a>
-            </div>
-            
-            <div class="specialty-card bg-white bg-opacity-20">
-                <h4 class="mb-3">📍 ¡NOS ENCUENTRAS AQUÍ!</h4>
-                <p class="fs-4 mb-3">
-                    <strong>Centro Poblado Tupad Amaru I</strong><br>
-                    Distrito de Imaza, Provincia de Bagua<br>
-                    Departamento de Amazonas
-                </p>
-                <div class="badge bg-light text-dark fs-5 p-3">
-                    🏃‍♂️ AL LADO DE LA LOZA DEPORTIVA - ¡Todo el mundo nos conoce!
-                </div>
-            </div>
-        </div>
+<!-- Mapa Mental de Ubicación -->
+<div class="location-quick">
+    <div class="location-title">🗺️ Referencias para llegar</div>
+    <div class="location-text">
+        <strong>🏃‍♂️ Al lado de la loza deportiva (coliseo)</strong><br>
+        📍 Centro Poblado Tupad Amaru I<br>
+        🏘️ Distrito de Imaza<br>
+        🗺️ Provincia de Bagua<br>
+        🌄 Departamento de Amazonas<br><br>
+        <em>¡Pregunta por el coliseo y todos te dirán!</em>
     </div>
-</section>
-
-<!-- Sección Final de Agradecimiento -->
-<section class="py-5 bg-dark text-white">
-    <div class="container text-center">
-        <div class="animate-on-scroll">
-            <h3 class="text-fire mb-4">
-                🙏 GRACIAS POR SER PARTE DE NUESTRA HISTORIA 🙏
-            </h3>
-            <p class="lead fs-4">
-                Cada cliente que nos visita, cada sonrisa que compartimos, 
-                cada "¡Está delicioso!" que escuchamos... <strong>¡ESO ES LO QUE NOS MOTIVA!</strong>
-            </p>
-            <div class="mt-4">
-                <span class="badge badge-fire fs-5 p-3">
-                    ❤️ SALCHIPOLLOS YARLI: DONDE EL SABOR ENCUENTRA SU HOGAR ❤️
-                </span>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 {% endblock %}

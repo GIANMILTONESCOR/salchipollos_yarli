@@ -1,0 +1,1 @@
+web: gunicorn salchipollos_yarli.wsgi:application

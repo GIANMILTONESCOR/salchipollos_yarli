@@ -1,585 +1,405 @@
 <!-- templates/restaurant/menu.html -->
 {% extends 'base.html' %}
 
-{% block title %}🔥 Menú Irresistible - Salchipollos Yarli{% endblock %}
+{% block title %}🍽️ Menú - Salchipollos Yarli{% endblock %}
 
 {% block content %}
-<!-- Header Section Ultra Atractivo -->
-<section class="hero-section py-5">
-    <div class="floating-elements"></div>
-    <div class="container hero-content position-relative" style="z-index: 10;">
-        <div class="text-center animate__animated animate__fadeInDown">
-            <h1 class="hero-title">
-                🍽️ MENÚ IRRESISTIBLE 🍽️
-            </h1>
-            <p class="hero-subtitle">
-                <strong>¡SABORES QUE TE HARÁN VOLVER POR MÁS!</strong>
-            </p>
-            <div class="badge badge-bestseller fs-4 p-4 animate__animated animate__bounce animate__infinite">
-                🔥 EL MEJOR MENÚ DE LA AMAZONÍA 🔥
-            </div>
+<!-- Hero Móvil -->
+<section class="hero-mobile">
+    <div class="hero-content">
+        <h1 class="hero-title">🍽️ NUESTRO MENÚ</h1>
+        <p class="hero-subtitle">Precios actualizados - Comida deliciosa</p>
+        <div class="hero-badges">
+            <span class="badge">💰 Súper precios</span>
+            <span class="badge">🔥 Recién preparado</span>
         </div>
     </div>
 </section>
 
-<!-- Sección ESTRELLA: Salchipollos -->
-<section class="py-5" style="background: var(--gradient-fire);">
-    <div class="container">
-        <div class="animate-on-scroll text-center mb-5">
-            <h2 class="section-title-mega text-white">
-                👑 NUESTRO SALCHIPOLLO LEGENDARIO 👑
-            </h2>
-            <p class="lead text-white fs-2 mb-4">
-                <strong>¡EL QUE TODOS QUIEREN PROBAR!</strong>
-            </p>
+<!-- Tabs de Navegación -->
+<section class="section">
+    <div class="mobile-tabs">
+        <button class="tab-btn" onclick="showTab('comidas')">🍗 Comidas</button>
+        <button class="tab-btn" onclick="showTab('bebidas')">🥤 Bebidas</button>
+        <button class="tab-btn" onclick="showTab('cervezas')">🍺 Cervezas</button>
+        <button class="tab-btn" onclick="showTab('preparadas')">🧊 Preparadas</button>
+    </div>
+
+    <!-- TAB: COMIDAS -->
+    <div id="comidas" class="tab-content">
+        <h3 class="section-title">
+            <i class="fas fa-utensils"></i>
+            Comidas Principales
+        </h3>
+        
+        <!-- Banner Especial Salchipollo -->
+        <div class="special-banner">
+            <div class="special-title">🔥 SALCHIPOLLO ESPECIAL</div>
+            <div class="special-subtitle">¡El más pedido de la zona!</div>
         </div>
         
-        <div class="row align-items-center">
-            <div class="col-lg-6 animate-on-scroll">
-                <div class="specialty-card bg-white">
-                    <div class="text-center mb-4">
-                        <div style="font-size: 8rem;">🍗</div>
-                        <div class="badge badge-bestseller fs-4 p-3 mb-3">
-                            ⭐ ESPECIALIDAD #1 ⭐
-                        </div>
-                    </div>
-                    <h3 class="text-fire text-center mb-4">SALCHIPOLLOS YARLI ESPECIAL</h3>
-                    <p class="fs-4 text-center mb-4">
-                        <strong>¡EL MÁS DELICIOSO DE TODA LA REGIÓN!</strong>
-                    </p>
-                    <div class="row g-3 mb-4">
-                        <div class="col-6">
-                            <div class="text-center">
-                                <i class="fas fa-fire fa-2x text-danger mb-2"></i>
-                                <h6>Sazón Secreta</h6>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="text-center">
-                                <i class="fas fa-crown fa-2x text-warning mb-2"></i>
-                                <h6>Receta Única</h6>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="text-center">
-                                <i class="fas fa-heart fa-2x text-danger mb-2"></i>
-                                <h6>Hecho con Amor</h6>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="text-center">
-                                <i class="fas fa-star fa-2x text-warning mb-2"></i>
-                                <h6>Súper Jugoso</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Salchipollo Plato Grande 🔥</div>
+                <div class="item-description">Nuestro plato estrella completo con papas</div>
             </div>
-            <div class="col-lg-6 animate-on-scroll text-white">
-                <h3 class="mb-4">🔥 ¿QUÉ LO HACE TAN ESPECIAL?</h3>
-                <div class="row g-3">
-                    <div class="col-12 text-warning">
-                        <div class="d-flex align-items-center p-3 bg-white bg-opacity-20 rounded-3">
-                            <i class="fas fa-magic fa-2x text-warning me-3"></i>
-                            <div>
-                                <h6 class="mb-1">RECETA FAMILIAR SECRETA</h6>
-                                <small>Transmitida por generaciones</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 text-success">
-                        <div class="d-flex align-items-center p-3 bg-white bg-opacity-20 rounded-3">
-                            <i class="fas fa-seedling fa-2x text-success me-3"></i>
-                            <div>
-                                <h6 class="mb-1">INGREDIENTES FRESCOS</h6>
-                                <small>Seleccionados diariamente</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 text-danger">
-                        <div class="d-flex align-items-center p-3 bg-white bg-opacity-20 rounded-3">
-                            <i class="fas fa-fire fa-2x text-danger me-3"></i>
-                            <div>
-                                <h6 class="mb-1">COCCIÓN PERFECTA</h6>
-                                <small>Jugoso por fuera, tierno por dentro</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Platos Principales MEGA Atractivos -->
-<section class="py-5 bg-pattern">
-    <div class="container">
-        <div class="animate-on-scroll text-center mb-5">
-            <h2 class="section-title-mega text-fire">
-                🍽️ PLATOS QUE CONQUISTAN CORAZONES 🍽️
-            </h2>
-            <p class="lead fs-3 mb-4">
-                <strong>¡Cada bocado es una experiencia única!</strong>
-            </p>
+            <div class="item-price price-special">S/ 7.00</div>
         </div>
         
-        <!-- Mostrar productos por categorías desde Django -->
-        {% for categoria in categorias %}
-        {% if categoria.producto_set.all %}
-        <div class="mb-5">
-            <h3 class="text-center text-fire mb-4">
-                <i class="fas fa-utensils me-2"></i>{{ categoria.nombre }}
-            </h3>
-            <div class="row g-4">
-                {% for producto in categoria.producto_set.all %}
-                {% if producto.disponible %}
-                <div class="col-lg-6 animate-on-scroll">
-                    <div class="card-premium h-100 overflow-hidden">
-                        <div class="position-relative">
-                            <div class="text-center p-4" style="background: {% if producto.especial %}var(--gradient-fire){% elif categoria.nombre == 'Bebidas' %}var(--gradient-green){% else %}var(--gradient-gold){% endif %}; color: {% if categoria.nombre == 'Bebidas' or producto.especial %}white{% else %}var(--text-dark){% endif %};">
-                                <div style="font-size: 5rem;">
-                                    {% if 'salchipollo' in producto.nombre|lower %}🍗
-                                    {% elif 'aguadito' in producto.nombre|lower %}🍲
-                                    {% elif 'arroz' in producto.nombre|lower %}🍚
-                                    {% elif 'pollo' in producto.nombre|lower %}🐔
-                                    {% elif 'cocona' in producto.nombre|lower %}🍎
-                                    {% elif 'chicha' in producto.nombre|lower %}🌽
-                                    {% elif 'heladita' in producto.nombre|lower %}🍧
-                                    {% else %}🍽️{% endif %}
-                                </div>
-                                <h4 class="mb-0">{{ producto.nombre|upper }}</h4>
-                            </div>
-                            {% if producto.especial %}
-                            <div class="position-absolute top-0 end-0 m-3">
-                                <span class="badge badge-bestseller fs-6 p-2">
-                                    🔥 ESPECIAL
-                                </span>
-                            </div>
-                            {% endif %}
-                            {% if producto.destacado %}
-                            <div class="position-absolute top-0 start-0 m-3">
-                                <span class="badge bg-success fs-6 p-2">
-                                    ⭐ POPULAR
-                                </span>
-                            </div>
-                            {% endif %}
-                        </div>
-                        <div class="card-body p-4">
-                            <p class="fs-5 mb-3">
-                                <strong>{{ producto.descripcion }}</strong>
-                            </p>
-                            {% if producto.precio %}
-                            <div class="text-center mb-3">
-                                <span class="badge badge-fire fs-5 p-3">
-                                    S/ {{ producto.precio }}
-                                </span>
-                            </div>
-                            {% endif %}
-                            <div class="row g-2">
-                                <div class="col-6">
-                                    <div class="badge bg-light text-dark w-100 p-2">
-                                        <i class="fas fa-leaf text-success"></i> Fresco
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="badge bg-light text-dark w-100 p-2">
-                                        <i class="fas fa-heart text-danger"></i> Delicioso
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endif %}
-                {% endfor %}
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Salchipollo Plato Pequeño</div>
+                <div class="item-description">Porción personal, ideal para una persona</div>
             </div>
-        </div>
-        {% endif %}
-        {% empty %}
-        <!-- Menú por defecto si no hay productos en Django -->
-        <div class="row g-4">
-            <div class="col-lg-6 animate-on-scroll">
-                <div class="card-premium h-100 overflow-hidden">
-                    <div class="position-relative">
-                        <div class="text-center p-4" style="background: var(--gradient-green); color: white;">
-                            <div style="font-size: 5rem;">🍲</div>
-                            <h4 class="mb-0">AGUADITO AMAZÓNICO</h4>
-                        </div>
-                        <div class="position-absolute top-0 end-0 m-3">
-                            <span class="badge bg-success fs-6 p-2">
-                                🌿 TRADICIONAL
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card-body p-4">
-                        <p class="fs-5 mb-3">
-                            <strong>¡RECONFORTANTE Y DELICIOSO!</strong><br>
-                            Con pollo tierno, arroz perfecto y cilantro fresco que despierta todos tus sentidos.
-                        </p>
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <div class="badge bg-light text-dark w-100 p-2">
-                                    <i class="fas fa-leaf text-success"></i> Natural
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="badge bg-light text-dark w-100 p-2">
-                                    <i class="fas fa-heart text-danger"></i> Nutritivo
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-6 animate-on-scroll">
-                <div class="card-premium h-100 overflow-hidden">
-                    <div class="position-relative">
-                        <div class="text-center p-4" style="background: var(--gradient-gold); color: var(--text-dark);">
-                            <div style="font-size: 5rem;">🍚</div>
-                            <h4 class="mb-0">ARROZ CON POLLO</h4>
-                        </div>
-                        <div class="position-absolute top-0 end-0 m-3">
-                            <span class="badge bg-warning text-dark fs-6 p-2">
-                                👑 AMAZÓNICO
-                            </span>
-                        </div>
-                    </div>
-                    <div class="card-body p-4">
-                        <p class="fs-5 mb-3">
-                            <strong>¡TRADICIÓN PURA EN CADA GRANO!</strong><br>
-                            Preparado con verduras frescas y el sello inconfundible de la cocina de la selva.
-                        </p>
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <div class="badge bg-light text-dark w-100 p-2">
-                                    <i class="fas fa-seedling text-success"></i> Fresco
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="badge bg-light text-dark w-100 p-2">
-                                    <i class="fas fa-thumbs-up text-primary"></i> Clásico
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</section>
-
-<!-- Bebidas Súper Refrescantes -->
-<section class="py-5 specialties-section">
-    <div class="container">
-        <div class="animate-on-scroll text-center mb-5">
-            <h2 class="section-title-mega text-white">
-                🥤 BEBIDAS QUE REFRESCAN EL ALMA 🥤
-            </h2>
-            <p class="lead text-white fs-3 mb-4">
-                <strong>¡Perfectas para el calor amazónico!</strong>
-            </p>
+            <div class="item-price">S/ 5.00</div>
         </div>
         
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 animate-on-scroll">
-                <div class="specialty-card text-center h-100">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🍎</div>
-                    <h5 class="mb-3">COCONA FRESCA</h5>
-                    <p class="mb-3">
-                        <strong>¡Vitaminas naturales que revitalizan!</strong><br>
-                        Fruta amazónica con poder refrescante.
-                    </p>
-                    <div class="badge bg-success fs-6 p-2">
-                        <i class="fas fa-leaf me-1"></i>100% Natural
-                    </div>
-                </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Chaufa Especial</div>
+                <div class="item-description">Arroz chaufa con pollo y verduras frescas</div>
             </div>
-            
-            <div class="col-lg-3 col-md-6 animate-on-scroll">
-                <div class="specialty-card text-center h-100">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🌽</div>
-                    <h5 class="mb-3">CHICHA DE JORA</h5>
-                    <p class="mb-3">
-                        <strong>¡Sabor ancestral que conecta!</strong><br>
-                        Tradición milenaria en cada sorbo.
-                    </p>
-                    <div class="badge bg-warning text-dark fs-6 p-2">
-                        <i class="fas fa-history me-1"></i>Tradicional
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 animate-on-scroll">
-                <div class="specialty-card text-center h-100">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🍷</div>
-                    <h5 class="mb-3">CHICHA MORADA</h5>
-                    <p class="mb-3">
-                        <strong>¡Dulce medicina natural!</strong><br>
-                        Antioxidantes que cuidan tu salud.
-                    </p>
-                    <div class="badge bg-primary fs-6 p-2">
-                        <i class="fas fa-shield-alt me-1"></i>Antioxidante
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 animate-on-scroll">
-                <div class="specialty-card text-center h-100">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">🍧</div>
-                    <h5 class="mb-3">HELADITAS</h5>
-                    <p class="mb-3">
-                        <strong>¡Frescura tropical instantánea!</strong><br>
-                        Sabores que combaten el calor.
-                    </p>
-                    <div class="badge bg-info fs-6 p-2">
-                        <i class="fas fa-snowflake me-1"></i>Súper Frías
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sección de Experiencia Gastronómica -->
-<section class="py-5 bg-light bg-pattern">
-    <div class="container">
-        <div class="animate-on-scroll text-center mb-5">
-            <h2 class="section-title-mega text-fire">
-                ✨ LA EXPERIENCIA YARLI ✨
-            </h2>
-            <p class="lead fs-3 mb-4">
-                <strong>¡Más que comida, es una experiencia completa!</strong>
-            </p>
+            <div class="item-price">S/ 8.00</div>
         </div>
         
-        <div class="row g-4">
-            <div class="col-lg-4 animate-on-scroll">
-                <div class="card-premium text-center h-100 p-4">
-                    <div class="card-icon icon-fire pulse-effect">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h4 class="text-fire mb-3">🍽️ SERVICIO EXCEPCIONAL</h4>
-                    <p class="fs-5">
-                        <strong>Atención rápida y amigable</strong> que te hará sentir como en casa. 
-                        ¡Cada cliente es especial para nosotros!
-                    </p>
-                    <div class="badge badge-fire">
-                        <i class="fas fa-clock me-1"></i>Servicio Express
-                    </div>
-                </div>
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Arroz con Pollo</div>
+                <div class="item-description">Tradicional arroz con pollo amazónico</div>
             </div>
-            
-            <div class="col-lg-4 animate-on-scroll">
-                <div class="card-premium text-center h-100 p-4">
-                    <div class="card-icon icon-green pulse-effect">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h4 class="text-success mb-3">🏠 AMBIENTE ACOGEDOR</h4>
-                    <p class="fs-5">
-                        <strong>Espacio familiar y cómodo</strong> perfecto para disfrutar con amigos. 
-                        ¡Al lado de la loza deportiva!
-                    </p>
-                    <div class="badge bg-success">
-                        <i class="fas fa-users me-1"></i>Para Toda la Familia
-                    </div>
-                </div>
+            <div class="item-price">S/ 8.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Caldo de Gallina 🍲</div>
+                <div class="item-description">Reconfortante caldo casero con gallina criolla</div>
             </div>
-            
-            <div class="col-lg-4 animate-on-scroll">
-                <div class="card-premium text-center h-100 p-4">
-                    <div class="card-icon icon-gold pulse-effect">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h4 class="text-warning mb-3">🏆 CALIDAD GARANTIZADA</h4>
-                    <p class="fs-5">
-                        <strong>Ingredientes frescos diarios</strong> y preparación con los más altos 
-                        estándares de calidad e higiene.
-                    </p>
-                    <div class="badge bg-warning text-dark">
-                        <i class="fas fa-check-circle me-1"></i>100% Garantizado
-                    </div>
-                </div>
+            <div class="item-price price-special">S/ 13.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Aguadito</div>
+                <div class="item-description">Aguadito de pollo con cilantro fresco</div>
             </div>
+            <div class="item-price">S/ 5.00</div>
+        </div>
+        
+        <!-- Sección Solo Pedidos -->
+        <h4 style="margin: 20px 0 10px; color: var(--primary); font-weight: 700;">📞 Solo por Pedido</h4>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Parrilla Mixta 🥩</div>
+                <div class="item-description">Parrilla completa para compartir</div>
+            </div>
+            <div class="item-price price-special">S/ 20.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Parrilla de Pollo 🍗</div>
+                <div class="item-description">Pollo a la parrilla con guarniciones</div>
+            </div>
+            <div class="item-price">S/ 15.00</div>
+        </div>
+    </div>
+
+    <!-- TAB: BEBIDAS -->
+    <div id="bebidas" class="tab-content">
+        <h3 class="section-title">
+            <i class="fas fa-bottle-water"></i>
+            Bebidas Gaseosas
+        </h3>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Gaseosa Inka Cola 🥤</div>
+                <div class="item-description">La bebida del sabor nacional</div>
+            </div>
+            <div class="item-price">S/ 3.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Gaseosa Big Kola</div>
+                <div class="item-description">Refrescante sabor a cola</div>
+            </div>
+            <div class="item-price">S/ 3.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Sporade</div>
+                <div class="item-description">Bebida energética refrescante</div>
+            </div>
+            <div class="item-price">S/ 3.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Electroligt</div>
+                <div class="item-description">Bebida rehidratante</div>
+            </div>
+            <div class="item-price">S/ 3.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Gaseosa Pepsi</div>
+                <div class="item-description">Clásica y refrescante</div>
+            </div>
+            <div class="item-price">S/ 2.50</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Gaseosa Guarana</div>
+                <div class="item-description">Sabor único y tropical</div>
+            </div>
+            <div class="item-price">S/ 2.50</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Gaseosa Fanta</div>
+                <div class="item-description">Sabor naranja refrescante</div>
+            </div>
+            <div class="item-price">S/ 2.50</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Volt</div>
+                <div class="item-description">Energía que necesitas</div>
+            </div>
+            <div class="item-price">S/ 2.50</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Maltin</div>
+                <div class="item-description">Bebida nutritiva de malta</div>
+            </div>
+            <div class="item-price">S/ 2.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cifrut</div>
+                <div class="item-description">Refresco de frutas</div>
+            </div>
+            <div class="item-price">S/ 1.50</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Gaseosa Guaranita</div>
+                <div class="item-description">Económica y sabrosa</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Gaseosa Sensación</div>
+                <div class="item-description">Refrescante y económica</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Agua Mineral</div>
+                <div class="item-description">Pura y refrescante</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
+        </div>
+    </div>
+
+    <!-- TAB: CERVEZAS -->
+    <div id="cervezas" class="tab-content">
+        <h3 class="section-title">
+            <i class="fas fa-beer"></i>
+            Cervezas Frías
+        </h3>
+        
+        <!-- Banner para cervezas -->
+        <div style="background: linear-gradient(135deg, #FFA000 0%, #FF8F00 100%); color: white; padding: 15px; border-radius: 15px; text-align: center; margin-bottom: 20px;">
+            <div style="font-size: 1.1rem; font-weight: 700;">🍺 CERVEZAS BIEN FRÍAS</div>
+            <div style="font-size: 0.9rem; opacity: 0.9;">Perfectas para el calor</div>
+        </div>
+        
+        <h4 style="margin: 20px 0 10px; color: var(--primary); font-weight: 700;">🍺 Cervezas en Botella</h4>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cerveza Trigo 🍺</div>
+                <div class="item-description">Cerveza rubia premium en botella</div>
+            </div>
+            <div class="item-price">S/ 9.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cerveza Negra</div>
+                <div class="item-description">Cerveza oscura de sabor intenso</div>
+            </div>
+            <div class="item-price">S/ 9.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cerveza Pilsen</div>
+                <div class="item-description">Clásica cerveza peruana</div>
+            </div>
+            <div class="item-price">S/ 8.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cerveza Cristal</div>
+                <div class="item-description">Refrescante y ligera</div>
+            </div>
+            <div class="item-price">S/ 8.00</div>
+        </div>
+        
+        <h4 style="margin: 20px 0 10px; color: var(--primary); font-weight: 700;">🥫 Cervezas en Lata</h4>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cerveza Pilsen Lata</div>
+                <div class="item-description">Clásica en presentación lata</div>
+            </div>
+            <div class="item-price">S/ 6.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cerveza Trigo Lata</div>
+                <div class="item-description">Rubia premium en lata</div>
+            </div>
+            <div class="item-price">S/ 6.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cerveza Negra Lata</div>
+                <div class="item-description">Oscura e intensa en lata</div>
+            </div>
+            <div class="item-price">S/ 6.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cerveza Cristal Lata</div>
+                <div class="item-description">Ligera y refrescante</div>
+            </div>
+            <div class="item-price">S/ 5.00</div>
+        </div>
+    </div>
+
+    <!-- TAB: BEBIDAS PREPARADAS -->
+    <div id="preparadas" class="tab-content">
+        <h3 class="section-title">
+            <i class="fas fa-cocktail"></i>
+            Bebidas Preparadas
+        </h3>
+        
+        <!-- Banner para bebidas preparadas -->
+        <div style="background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%); color: white; padding: 15px; border-radius: 15px; text-align: center; margin-bottom: 20px;">
+            <div style="font-size: 1.1rem; font-weight: 700;">🧊 BEBIDAS NATURALES</div>
+            <div style="font-size: 0.9rem; opacity: 0.9;">Por vaso o unidad - Frescas y nutritivas</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cocona 🍎</div>
+                <div class="item-description">Fruta amazónica rica en vitamina C</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Cebada</div>
+                <div class="item-description">Bebida nutritiva y refrescante</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Manzana 🍎</div>
+                <div class="item-description">Jugo natural de manzana</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Chicha Morada 🍷</div>
+                <div class="item-description">Tradicional bebida antioxidante</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Chicha de Jora 🌽</div>
+                <div class="item-description">Bebida fermentada tradicional</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Maracuyá</div>
+                <div class="item-description">Tropical y refrescante</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
+        </div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Soya</div>
+                <div class="item-description">Nutritiva bebida vegetal</div>
+            </div>
+            <div class="item-price">S/ 1.00</div>
         </div>
     </div>
 </section>
 
-<!-- Sección de Horarios y Disponibilidad -->
-<section class="py-5" style="background: var(--gradient-green);">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 animate-on-scroll text-white">
-                <h2 class="section-title-mega text-white">
-                    🕐 ¡SIEMPRE ABIERTOS PARA TI!
-                </h2>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="specialty-card text-center">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">🌅</div>
-                            <h5>TODOS LOS DÍAS</h5>
-                            <p><strong>Desayuno, almuerzo y cena</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="specialty-card text-center">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">👥</div>
-                            <h5>PARA GRUPOS</h5>
-                            <p><strong>Perfecto para amigos</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="specialty-card text-center">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">🌡️</div>
-                            <h5>CLIMA IDEAL</h5>
-                            <p><strong>Fresco y ventilado</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="specialty-card text-center">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">📍</div>
-                            <h5>FÁCIL ACCESO</h5>
-                            <p><strong>Al lado de la loza</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center animate-on-scroll">
-                <div class="info-card-modern">
-                    <h3 class="text-fire mb-4">
-                        <i class="fas fa-info-circle me-2"></i>INFORMACIÓN IMPORTANTE
-                    </h3>
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <div class="d-flex align-items-center p-3 bg-light rounded-3">
-                                <i class="fas fa-clock fa-2x text-primary me-3"></i>
-                                <div class="text-start">
-                                    <h6 class="mb-1 text-primary">Horarios Flexibles</h6>
-                                    <small>Abierto cuando más lo necesitas</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex align-items-center p-3 bg-light rounded-3">
-                                <i class="fas fa-users fa-2x text-success me-3"></i>
-                                <div class="text-start">
-                                    <h6 class="mb-1 text-success">Ambiente Familiar</h6>
-                                    <small>Lugar perfecto para socializar</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex align-items-center p-3 bg-light rounded-3">
-                                <i class="fas fa-heart fa-2x text-danger me-3"></i>
-                                <div class="text-start">
-                                    <h6 class="mb-1 text-danger">Sazón Especial</h6>
-                                    <small>Preparado con amor y tradición</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Botón de WhatsApp Flotante para Pedidos -->
+<div style="position: fixed; bottom: 100px; right: 20px; z-index: 999;">
+    <a href="https://wa.me/51999999999?text=Hola, quiero hacer un pedido del menú" 
+       class="whatsapp-btn" 
+       style="padding: 15px; border-radius: 50%; font-size: 1.5rem; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
+<!-- Call to Action -->
+<section class="section">
+    <div class="special-banner">
+        <div class="special-title">🚀 ¿LISTO PARA ORDENAR?</div>
+        <div class="special-subtitle">¡Envíanos tu pedido por WhatsApp!</div>
     </div>
+    
+    <button class="action-btn" onclick="window.open('https://wa.me/51999999999?text=Hola, quiero hacer un pedido', '_blank')">
+        <i class="fab fa-whatsapp"></i>
+        Hacer Pedido por WhatsApp
+    </button>
 </section>
 
-<!-- Llamada a la Acción MEGA Poderosa -->
-<section class="py-5" style="background: var(--gradient-fire);">
-    <div class="container text-center text-white">
-        <div class="animate-on-scroll">
-            <h2 class="display-3 fw-bold mb-4 animate__animated animate__pulse animate__infinite">
-                🤤 ¿SE TE HACE AGUA LA BOCA? 🤤
-            </h2>
-            <p class="display-6 mb-4">
-                <strong>¡NO ESPERES MÁS!</strong>
-            </p>
-            <p class="lead fs-3 mb-5">
-                Ven ahora mismo y prueba por qué somos el <strong>MEJOR RESTAURANTE</strong> 
-                de toda la región amazónica 🏆
-            </p>
-            
-            <div class="row g-3 justify-content-center mb-5">
-                <div class="col-auto">
-                    <div class="badge bg-light text-dark fs-4 p-4">
-                        🔥 SAZÓN INCOMPARABLE
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="badge bg-light text-dark fs-4 p-4">
-                        👑 CALIDAD PREMIUM
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="badge bg-light text-dark fs-4 p-4">
-                        ❤️ ATENCIÓN FAMILIAR
-                    </div>
-                </div>
-            </div>
-            
-            <div class="d-flex flex-wrap justify-content-center gap-3">
-                <a href="{% url 'nosotros' %}" class="btn btn-outline-light btn-lg fs-3 px-5 py-3 animate__animated animate__bounce animate__infinite">
-                    <i class="fas fa-heart me-2"></i>¡QUIERO CONOCER MÁS!
-                </a>
-                <a href="{% url 'home' %}" class="btn btn-light btn-lg fs-3 px-5 py-3 text-dark">
-                    <i class="fas fa-home me-2"></i>Volver al Inicio
-                </a>
-            </div>
-            
-            <div class="mt-5">
-                <p class="fs-4 mb-3">
-                    <strong>📍 Nos encuentras en:</strong>
-                </p>
-                <p class="fs-5">
-                    Centro Poblado Tupad Amaru I<br>
-                    <span class="badge bg-light text-dark fs-6 p-2 mt-2">
-                        🏃‍♂️ Al lado de la loza deportiva - ¡Todo el mundo nos conoce!
-                    </span>
-                </p>
-            </div>
-        </div>
+<!-- Información Extra -->
+<div class="location-quick">
+    <div class="location-title">📍 Ubicación y Horarios</div>
+    <div class="location-text">
+        Al lado de la loza deportiva - Tupad Amaru I<br>
+        <strong>Abierto todos los días</strong><br>
+        🕐 Horarios flexibles para tu comodidad
     </div>
-</section>
-
-<!-- Sección de Garantía de Calidad -->
-<section class="py-5 bg-light bg-pattern">
-    <div class="container">
-        <div class="animate-on-scroll text-center">
-            <h2 class="section-title-mega text-fire mb-5">
-                🛡️ NUESTRA GARANTÍA DE CALIDAD 🛡️
-            </h2>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="text-center">
-                        <div style="font-size: 4rem; margin-bottom: 1rem;">🥇</div>
-                        <h5 class="text-fire">INGREDIENTES PREMIUM</h5>
-                        <p>Seleccionados diariamente para garantizar frescura</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="text-center">
-                        <div style="font-size: 4rem; margin-bottom: 1rem;">🧑‍🍳</div>
-                        <h5 class="text-fire">CHEF EXPERTA</h5>
-                        <p>Años de experiencia en cocina amazónica</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="text-center">
-                        <div style="font-size: 4rem; margin-bottom: 1rem;">🧼</div>
-                        <h5 class="text-fire">HIGIENE TOTAL</h5>
-                        <p>Máximos estándares de limpieza y seguridad</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="text-center">
-                        <div style="font-size: 4rem; margin-bottom: 1rem;">😊</div>
-                        <h5 class="text-fire">SATISFACCIÓN 100%</h5>
-                        <p>Tu sonrisa es nuestra mayor recompensa</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 {% endblock %}
